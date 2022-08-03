@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section id="container">
+        <div class="operation-area top-section">
+            <h1 class="operation-area__title">Metric/Imperial Unit Conversion</h1>
+            <input type="number" class="operation-area__input" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+            <p id="warning"></p>
+            <button class="operation-area__btn">Convert</button>
+            <i class="fa-solid fa-moon" id="dark-mode"></i>
+            <i class="fa-solid fa-sun" id="light-mode"></i>
+        </div>
+        <div class="display-area">
+            <div class="render">
+                <h3 class="render__title">Length (Meter/Feet)</h3>
+                <p class="render__text"><span class="unit">0</span> meters = <span id="feet">0</span> feet | <span class="unit">0</span> feet = <span id="meters">0</span> meters</p>
+            </div>
+            <div class="render">
+                <h3 class="render__title">Volume (Liters/Gallons)</h3>
+                <p class="render__text"><span class="unit">0</span> litters = <span id="gallons">0</span> gallons | <span class="unit">0</span> gallons = <span id="liters">0</span> liters</p>
+            </div>
+            <div class="render">
+                <h3 class="render__title">Mass (Kilograms/Pounds)</h3>
+                <p class="render__text"><span class="unit">0</span> kilos = <span id="pounds">0</span> pounds | <span class="unit">0</span> pounds = <span id="kilograms">0</span> kilos</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/d2a1321d7b.js" crossorigin="anonymous"></script>
+</body>
+</html>
