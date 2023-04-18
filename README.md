@@ -24,6 +24,3 @@ This project is a unit converter that converts between different units of measur
 ## Access directly from here
 [Open](https://sammy-nte.github.io/unit-converter/)
 
-## Credits
-
-This project was created by [Your Name]. Feel free to use and modify this project as you see fit.
